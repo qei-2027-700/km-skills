@@ -14,14 +14,14 @@ for skill_path in "$SKILLS_DIR"/*/; do
   target="$CLAUDE_SKILLS/$skill_name"
 
   if [ -L "$target" ]; then
-    # 既存シンリンクを更新
-    ln -sf "$skill_path" "$target"
+    # 既存シンリンクを更新（-n: シンリンク先をディレクトリとして辿らない）
+    ln -sfn "$skill_path" "$target"
     echo "updated: $skill_name"
   elif [ -e "$target" ]; then
     echo "skip (already exists, not a symlink): $skill_name"
     continue
   else
-    ln -s "$skill_path" "$target"
+    ln -sn "$skill_path" "$target"
     echo "linked:  $skill_name"
   fi
   ((linked++)) || true
