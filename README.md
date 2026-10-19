@@ -17,7 +17,6 @@
 | [mermaid](skills/mermaid/SKILL.md) | Mermaid 記法で図を生成・表示する |
 | [gh-rv](skills/gh-rv/SKILL.md) | GitHub Pull Request をレビューする |
 | [gh-pr](skills/gh-pr/SKILL.md) | 変更と検証結果を整理し、pushしてPRを作成する |
-| [gh-wt](skills/gh-wt/SKILL.md) | Issueや作業目的からブランチとworktreeを作成する |
 | [gh-merge](skills/gh-merge/SKILL.md) | CI・レビュー条件を確認してPRをマージする |
 | [git-commit](skills/git-commit/SKILL.md) | 依頼範囲の変更をステージしてコミットする |
 | [git-push](skills/git-push/SKILL.md) | 送信先とコミットを確認してpushする |
